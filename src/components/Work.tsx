@@ -96,44 +96,44 @@ const Projects = () => {
           {projects.filter(project => project.featured).map((project) => (
             <div
               key={project.id}
-              className="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
+              className="group relative overflow-hidden rounded-3xl bg-white border border-gray-100 hover:border-gray-200 transition-all duration-300"
             >
-              <div className="h-64 bg-gradient-to-br from-blue-50 to-purple-50 flex items-center justify-center">
-                <project.icon className="w-24 h-24 text-blue-600 group-hover:scale-110 transition-transform duration-500" />
+              <div className="h-48 bg-gray-50 flex items-center justify-center">
+                <project.icon className="w-16 h-16 text-gray-400 group-hover:text-gray-600 transition-colors duration-300" />
               </div>
-              <div className="p-8">
+              <div className="p-6">
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.status && (
-                    <span className="px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full font-medium">
+                    <span className="px-2 py-1 bg-orange-50 text-orange-600 text-xs rounded-md font-medium">
                       {project.status}
                     </span>
                   )}
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full"
+                      className="px-2 py-1 bg-gray-50 text-gray-600 text-xs rounded-md"
                     >
                       {tag}
                     </span>
                   ))}
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors duration-200">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2 leading-tight">
                   {project.title}
                 </h3>
-                <p className="text-gray-600 mb-6 leading-relaxed">
+                <p className="text-gray-600 mb-4 text-sm leading-relaxed">
                   {project.description}
                 </p>
                 {project.impact && (
-                  <p className="text-sm text-blue-600 mb-4 font-medium">
+                  <p className="text-xs text-blue-600 mb-4 font-medium">
                     Impact: {project.impact}
                   </p>
                 )}
                 <a
                   href={project.link}
-                  className="inline-flex items-center text-blue-600 font-medium hover:text-blue-700 transition-colors duration-200"
+                  className="inline-flex items-center text-blue-600 text-sm font-medium hover:text-blue-700 transition-colors duration-200"
                 >
                   View Project
-                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
+                  <ArrowRight className="ml-1 w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
                 </a>
               </div>
             </div>
