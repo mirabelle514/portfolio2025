@@ -34,6 +34,15 @@ const Projects = () => {
       featured: true
     },
     {
+      id: 4,
+      title: "AI Chatbot for Insurance Customer Service",
+      description: "Modern, accessible AI chatbot interface showcasing UX best practices for insurance customer service. Features Liberty Mutual's design system, WCAG compliance, smart suggestions, and realistic conversation flow with typing indicators.",
+      image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800",
+      tags: ["React", "TypeScript", "AI Integration", "Design Systems", "Accessibility"],
+      link: "https://github.com/mirabelle514/AIChatbot",
+      featured: false
+    },
+    {
       id: 7,
       title: "Home Design Assistant App",
       description: "Intelligent home design assistant app leveraging AI recommendation algorithms for personalized DIY project suggestions based on style and budget.",
@@ -43,7 +52,7 @@ const Projects = () => {
       featured: false
     },
     {
-      id: 4,
+      id: 5,
       title: "Tour Manager Mobile Application",
       description: "Comprehensive tour management mobile application supporting both iOS and Android platforms with complex business features and 50+ reusable components.",
       image: "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800",
@@ -52,7 +61,7 @@ const Projects = () => {
       featured: false
     },
     {
-      id: 5,
+      id: 6,
       title: "The Wednesday Collective Website",
       description: "Professional React-based website for digital agency using modern JavaScript and component-based architecture with custom Lumière Design System.",
       image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800",
@@ -61,21 +70,12 @@ const Projects = () => {
       featured: false
     },
     {
-      id: 6,
+      id: 8,
       title: "U.S. Presidents Interactive Website",
       description: "Comprehensive React.js single-page application featuring 46 U.S. presidential biographies with imagined correspondence and custom CSS3 styling.",
       image: "https://images.pexels.com/photos/8112198/pexels-photo-8112198.jpeg?auto=compress&cs=tinysrgb&w=800",
       tags: ["React.js", "JavaScript ES6+", "React Router", "CSS3"],
       link: "#",
-      featured: false
-    },
-    {
-      id: 8,
-      title: "AI Chatbot for Insurance Customer Service",
-      description: "Modern, accessible AI chatbot interface showcasing UX best practices for insurance customer service. Features Liberty Mutual's design system, WCAG compliance, smart suggestions, and realistic conversation flow with typing indicators.",
-      image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800",
-      tags: ["React", "TypeScript", "AI Integration", "Design Systems", "Accessibility"],
-      link: "https://github.com/mirabelle514/AIChatbot",
       featured: false
     }
   ];
