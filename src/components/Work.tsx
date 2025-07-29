@@ -144,42 +144,42 @@ const Projects = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {projects.filter(project => !project.featured).map((project) => (
             <div
               key={project.id}
-              className="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-lg transition-all duration-300"
+              className="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
             >
-              <div className="aspect-w-16 aspect-h-9 overflow-hidden">
+              <div className="aspect-w-16 aspect-h-10 overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
-              <div className="p-6">
+              <div className="p-8">
                 <div className="flex flex-wrap gap-2 mb-3">
-                  {project.tags.slice(0, 2).map((tag) => (
+                  {project.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-full"
+                      className="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full"
                     >
                       {tag}
                     </span>
                   ))}
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors duration-200">
+                <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors duration-200">
                   {project.title}
                 </h3>
-                <p className="text-gray-600 text-sm mb-4 leading-relaxed">
+                <p className="text-gray-600 mb-6 leading-relaxed">
                   {project.description}
                 </p>
                 <a
                   href={project.link}
-                  className="inline-flex items-center text-blue-600 font-medium text-sm hover:text-blue-700 transition-colors duration-200"
+                  className="inline-flex items-center text-blue-600 font-medium hover:text-blue-700 transition-colors duration-200"
                 >
                   View Project
-                  <ExternalLink className="ml-1 w-3 h-3" />
+                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
                 </a>
               </div>
             </div>
