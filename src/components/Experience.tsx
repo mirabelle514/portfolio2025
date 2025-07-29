@@ -13,12 +13,22 @@ const Experience = () => {
         "Developed AI agent for Design System, automating component documentation", 
         "Created intelligent chatbot, enhancing user engagement",
         "Implemented AI-powered documentation server, saving engineering time",
-        "Participated in Claude AI pilot program, establishing best practices",
-        "Transitioned to iOS development, contributing to mobile architecture",
-        "Built scalable React components using TypeScript and CSS3",
-        "Created comprehensive documentation, increasing team productivity"
+        "Participated in Claude AI pilot program, establishing best practices"
       ],
-      categories: ["AI Integration & Innovation", "Mobile & Frontend Development"]
+      categories: ["AI Integration & Innovation", "Frontend Development"]
+    },
+    {
+      company: "Indeed",
+      role: "Software Engineer / UX Developer", 
+      duration: "July 2021 - July 2025 • 4 years",
+      location: "Remote",
+      achievements: [
+        "Built scalable React components using TypeScript and CSS3",
+        "Created comprehensive documentation, increasing team productivity",
+        "Optimized UI/UX interfaces, enhancing user engagement",
+        "Implemented responsive design patterns across multiple projects"
+      ],
+      categories: ["Frontend Development"]
     },
     {
       company: "AAA",
