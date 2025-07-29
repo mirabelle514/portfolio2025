@@ -19,14 +19,14 @@ const Hero = () => {
                 Frontend Developer
               </p>
               <h1 className="text-5xl md:text-7xl font-bold text-gray-900 tracking-tight leading-tight">
-                AI Integration
+                Expanding into
                 <span className="block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                  Specialist
+                  AI & Mobile
                 </span>
               </h1>
             </div>
             <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Building intelligent solutions with 8+ years of experience. Passionate about AI integration, mobile development, and cutting-edge technologies.
+              Frontend Developer with 8+ years of experience, currently expanding into AI integration and mobile development. Passionate about learning emerging technologies and building user-centric interfaces.
             </p>
           </div>
           
