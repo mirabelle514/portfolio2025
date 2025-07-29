@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, ArrowRight } from 'lucide-react';
+import { ExternalLink, ArrowRight, Heart, Brain, Users, MessageCircle, Home, Smartphone, Globe, Crown } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
@@ -7,7 +7,7 @@ const Projects = () => {
       id: 1,
       title: "Healthcare Application - Loving Paws Pal",
       description: "Comprehensive pet health management web application featuring medication reminders, appointment scheduling, and health history tracking for multiple pets.",
-      image: "https://images.pexels.com/photos/4269505/pexels-photo-4269505.jpeg?auto=compress&cs=tinysrgb&w=800",
+      icon: Heart,
       tags: ["Node.js v18+", "JavaScript", "HTML5", "CSS3", "Web APIs"],
       link: "#",
       status: "In Progress",
@@ -17,7 +17,7 @@ const Projects = () => {
       id: 2,
       title: "AI Content Analyzer",
       description: "Advanced AI-powered content analysis with real-time insights, confidence scoring, and progressive disclosure patterns.",
-      image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800",
+      icon: Brain,
       tags: ["React", "Vite", "TypeScript", "AI Analysis"],
       link: "https://ai-interface-studio.com/",
       impact: "Real-time AI insights with confidence scoring",
@@ -27,7 +27,7 @@ const Projects = () => {
       id: 3,
       title: "AI-Powered Onboarding System",
       description: "AI-powered onboarding system featuring intelligent chat support, personalized user profiling, and comprehensive cheat sheet generation for development teams.",
-      image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800",
+      icon: Users,
       tags: ["React 18", "Vite", "Tailwind CSS", "AI Integration", "Node.js"],
       link: "#",
       impact: "Reduced developer setup time by 60%",
@@ -37,7 +37,7 @@ const Projects = () => {
       id: 4,
       title: "AI Chatbot for Insurance Customer Service",
       description: "Modern, accessible AI chatbot interface showcasing UX best practices for insurance customer service. Features Liberty Mutual's design system, WCAG compliance, smart suggestions, and realistic conversation flow with typing indicators.",
-      image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800",
+      icon: MessageCircle,
       tags: ["React", "TypeScript", "AI Integration", "Design Systems", "Accessibility"],
       link: "https://github.com/mirabelle514/AIChatbot",
       featured: false
@@ -46,7 +46,7 @@ const Projects = () => {
       id: 7,
       title: "Home Design Assistant App",
       description: "Intelligent home design assistant app leveraging AI recommendation algorithms for personalized DIY project suggestions based on style and budget.",
-      image: "https://images.pexels.com/photos/6585759/pexels-photo-6585759.jpeg?auto=compress&cs=tinysrgb&w=800",
+      icon: Home,
       tags: ["AI APIs", "React", "Mobile Development", "Data Modeling"],
       link: "#",
       featured: false
@@ -55,7 +55,7 @@ const Projects = () => {
       id: 5,
       title: "Tour Manager Mobile Application",
       description: "Comprehensive tour management mobile application supporting both iOS and Android platforms with complex business features and 50+ reusable components.",
-      image: "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800",
+      icon: Smartphone,
       tags: ["React Native", "TypeScript", "Redux Toolkit", "Expo"],
       link: "#",
       featured: false
@@ -64,7 +64,7 @@ const Projects = () => {
       id: 6,
       title: "The Wednesday Collective Website",
       description: "Professional React-based website for digital agency using modern JavaScript and component-based architecture with custom Lumière Design System.",
-      image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800",
+      icon: Globe,
       tags: ["React 18", "JavaScript ES6+", "Tailwind CSS", "PostCSS"],
       link: "#",
       featured: false
@@ -73,7 +73,7 @@ const Projects = () => {
       id: 8,
       title: "U.S. Presidents Interactive Website",
       description: "Comprehensive React.js single-page application featuring 46 U.S. presidential biographies with imagined correspondence and custom CSS3 styling.",
-      image: "https://images.pexels.com/photos/8112198/pexels-photo-8112198.jpeg?auto=compress&cs=tinysrgb&w=800",
+      icon: Crown,
       tags: ["React.js", "JavaScript ES6+", "React Router", "CSS3"],
       link: "#",
       featured: false
@@ -98,12 +98,8 @@ const Projects = () => {
               key={project.id}
               className="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
             >
-              <div className="aspect-w-16 aspect-h-10 overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-                />
+              <div className="h-64 bg-gradient-to-br from-blue-50 to-purple-50 flex items-center justify-center">
+                <project.icon className="w-24 h-24 text-blue-600 group-hover:scale-110 transition-transform duration-500" />
               </div>
               <div className="p-8">
                 <div className="flex flex-wrap gap-2 mb-4">
@@ -150,12 +146,8 @@ const Projects = () => {
               key={project.id}
               className="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
             >
-              <div className="aspect-w-16 aspect-h-10 overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-                />
+              <div className="h-64 bg-gradient-to-br from-gray-50 to-blue-50 flex items-center justify-center">
+                <project.icon className="w-24 h-24 text-gray-600 group-hover:scale-110 transition-transform duration-500" />
               </div>
               <div className="p-8">
                 <div className="flex flex-wrap gap-2 mb-3">
