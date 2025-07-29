@@ -1,51 +1,44 @@
 import React from 'react';
 import { ArrowDown } from 'lucide-react';
 
-const Hero = () => {
+const Hero: React.FC = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-gray-50 to-white">
-      {/* Background Elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-purple-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
-        <div className="absolute top-40 left-40 w-80 h-80 bg-pink-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
-      </div>
-
-      <div className="relative z-10 text-center px-6 lg:px-8 max-w-4xl mx-auto">
-        <div className="space-y-8">
-          <div className="space-y-4">
-            <div className="space-y-2">
-              <p className="text-lg md:text-xl text-gray-600 font-medium tracking-wide uppercase">
-                Frontend Developer
+    <section className="flex overflow-hidden relative justify-center items-center min-h-screen bg-white">
+      <div className="relative z-10 px-6 mx-auto max-w-4xl text-center lg:px-8">
+        <div className="space-y-xl">
+          <div className="space-y-md">
+            <div className="space-y-sm">
+              <p className="text-lg font-medium tracking-wide uppercase text-lumiere-burgundy md:text-xl font-opensans">
+                Frontend Engineer  
               </p>
-              <h1 className="text-5xl md:text-7xl font-bold text-gray-900 tracking-tight leading-tight">
-                Expanding into
-                <span className="block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                  AI & Mobile
+              <h1 className="text-5xl font-bold tracking-tight leading-tight text-lumiere-navy md:text-7xl">
+              AI Integration
+                <span className="block text-lumiere-burgundy">
+                Developer
                 </span>
               </h1>
             </div>
-            <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Frontend Developer with 8+ years of experience, currently expanding into AI integration and mobile development. Passionate about learning emerging technologies and building user-centric interfaces.
+            <p className="mx-auto max-w-3xl text-xl leading-relaxed text-lumiere-navy md:text-2xl font-opensans">
+            8+ years of frontend development experience with experience building production AI-powered solutions. Passionate about creating intelligent, user-centric interfaces that leverage cutting-edge AI technologies to solve real-world problems.
             </p>
           </div>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
+          <div className="flex flex-col justify-center items-center gap-md mt-xl sm:flex-row">
             <a
               href="#projects"
-              className="inline-flex items-center px-8 py-4 bg-gray-900 text-white font-medium rounded-full hover:bg-gray-800 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
+              className="inline-flex items-center font-medium rounded-full shadow-lg transition-all duration-300 transform px-lg py-md text-lumiere-ivory bg-lumiere-navy hover:bg-lumiere-burgundy hover:scale-105 hover:shadow-xl"
             >
               View Projects
             </a>
             <a
               href="#about"
-              className="inline-flex items-center px-8 py-4 bg-white text-gray-900 font-medium rounded-full border border-gray-200 hover:border-gray-300 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
+              className="inline-flex items-center font-medium rounded-full border shadow-lg transition-all duration-300 transform px-lg py-md text-lumiere-navy bg-lumiere-ivory border-lumiere-gold hover:border-lumiere-burgundy hover:scale-105 hover:shadow-xl"
             >
               About Me
             </a>
             <a
               href="/resume.pdf"
-              className="inline-flex items-center px-6 py-3 bg-blue-50 text-blue-700 font-medium rounded-full border border-blue-200 hover:border-blue-300 hover:bg-blue-100 transition-all duration-200 text-sm"
+              className="inline-flex items-center text-sm font-medium rounded-full border transition-all duration-300 px-md py-sm text-lumiere-burgundy bg-lumiere-dove border-lumiere-gold hover:border-lumiere-burgundy hover:bg-lumiere-sage"
             >
               Download Resume
             </a>
@@ -53,8 +46,8 @@ const Hero = () => {
         </div>
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <ArrowDown className="w-6 h-6 text-gray-400" />
+        <div className="absolute left-1/2 animate-bounce transform -translate-x-1/2 bottom-lg">
+          <ArrowDown className="w-6 h-6 text-lumiere-gold" />
         </div>
       </div>
     </section>

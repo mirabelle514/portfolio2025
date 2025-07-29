@@ -1,11 +1,11 @@
 import React from 'react';
 import { Building2, Calendar, MapPin } from 'lucide-react';
 
-const Experience = () => {
+const Experience: React.FC = () => {
   const experiences = [
     {
       company: "Indeed",
-      role: "Software Engineer / UX Developer",
+      role: "Frontend Engineer / UX Developer",
       duration: "July 2021 - July 2025 • 4 years",
       location: "Remote",
       achievements: [
@@ -13,22 +13,16 @@ const Experience = () => {
         "Developed AI agent for Design System, automating component documentation", 
         "Created intelligent chatbot, enhancing user engagement",
         "Implemented AI-powered documentation server, saving engineering time",
-        "Participated in Claude AI pilot program, establishing best practices"
-      ],
-      categories: ["AI Integration & Innovation", "Frontend Development"]
-    },
-    {
-      company: "Indeed",
-      role: "Software Engineer / UX Developer", 
-      duration: "July 2021 - July 2025 • 4 years",
-      location: "Remote",
-      achievements: [
+        "Participated in Claude AI pilot program, establishing best practices",
         "Built scalable React components using TypeScript and CSS3",
         "Created comprehensive documentation, increasing team productivity",
         "Optimized UI/UX interfaces, enhancing user engagement",
-        "Implemented responsive design patterns across multiple projects"
+        "Implemented responsive design patterns across multiple projects",
+        "Developed React components for marketing products with cross-client compatibility",
+        "Established ADA compliance standards, reducing accessibility issues",
+        "Managed high-volume production workflows, delivering quality assets"
       ],
-      categories: ["Frontend Development"]
+      categories: ["AI Integration & Innovation", "Frontend Development"]
     },
     {
       company: "AAA",
@@ -36,11 +30,9 @@ const Experience = () => {
       duration: "April 2017 - July 2021 • 4+ years",
       location: "On-site",
       achievements: [
-        "Developed HTML campaigns for marketing products with cross-client compatibility",
-        "Implemented A/B testing frameworks, improving engagement metrics",
+        "Developed React components for marketing products with cross-client compatibility",
         "Established ADA compliance standards, reducing accessibility issues",
-        "Managed high-volume production workflows, delivering quality assets",
-        "Collaborated with creative teams using Adobe Photoshop"
+        "Managed high-volume production workflows, delivering quality assets"
       ],
       categories: ["Frontend Development", "Marketing Technology"]
     },
@@ -60,33 +52,33 @@ const Experience = () => {
 
   return (
     <section id="experience" className="py-24 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+      <div className="px-6 mx-auto max-w-7xl lg:px-8">
+        <div className="mb-16 text-center">
+          <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">
             Experience
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="mx-auto max-w-2xl text-xl text-gray-600">
             8+ years of professional experience in frontend development, AI integration, and mobile technologies
           </p>
         </div>
 
         <div className="space-y-12">
           {experiences.map((exp, index) => (
-            <div key={index} className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
-              <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-6">
+            <div key={index} className="p-8 bg-white rounded-2xl shadow-lg transition-shadow duration-300 hover:shadow-xl">
+              <div className="flex flex-col mb-6 lg:flex-row lg:items-start lg:justify-between">
                 <div className="flex-1">
                   <div className="flex items-center mb-2">
-                    <Building2 className="w-5 h-5 text-blue-600 mr-2" />
+                    <Building2 className="mr-2 w-5 h-5 text-lumiere-navy" />
                     <h3 className="text-2xl font-bold text-gray-900">{exp.company}</h3>
                   </div>
-                  <h4 className="text-xl text-blue-600 font-semibold mb-3">{exp.role}</h4>
-                  <div className="flex flex-col sm:flex-row sm:items-center gap-4 text-gray-600 mb-4">
+                  <h4 className="mb-3 text-xl font-semibold text-lumiere-navy">{exp.role}</h4>
+                  <div className="flex flex-col gap-4 mb-4 text-gray-600 sm:flex-row sm:items-center">
                     <div className="flex items-center">
-                      <Calendar className="w-4 h-4 mr-2" />
+                      <Calendar className="mr-2 w-4 h-4" />
                       <span className="text-sm">{exp.duration}</span>
                     </div>
                     <div className="flex items-center">
-                      <MapPin className="w-4 h-4 mr-2" />
+                      <MapPin className="mr-2 w-4 h-4" />
                       <span className="text-sm">{exp.location}</span>
                     </div>
                   </div>
@@ -96,18 +88,18 @@ const Experience = () => {
               <div className="space-y-6">
                 {exp.categories.map((category, catIndex) => (
                   <div key={catIndex}>
-                    <h5 className="text-lg font-semibold text-gray-900 mb-3">{category}</h5>
+                    <h5 className="mb-3 text-lg font-semibold text-gray-900">{category}</h5>
                     <ul className="space-y-2">
                       {exp.achievements
                         .filter((_, achIndex) => {
                           if (category === "AI Integration & Innovation") return achIndex < 5;
-                          if (category === "Mobile & Frontend Development") return achIndex >= 5;
+                          if (category === "Frontend Development") return achIndex >= 5;
                           return true;
                         })
                         .map((achievement, achIndex) => (
                           <li key={achIndex} className="flex items-start">
-                            <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                            <span className="text-gray-700 leading-relaxed">{achievement}</span>
+                            <div className="flex-shrink-0 mt-2 mr-3 w-2 h-2 rounded-full bg-lumiere-navy"></div>
+                            <span className="leading-relaxed text-gray-700">{achievement}</span>
                           </li>
                         ))}
                     </ul>

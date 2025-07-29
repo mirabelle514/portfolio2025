@@ -7,7 +7,7 @@ import Experience from './components/Experience';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="min-h-screen">
       <Header />
