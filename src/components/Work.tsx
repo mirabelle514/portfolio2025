@@ -78,6 +78,15 @@ const Projects = () => {
       link: "#",
       featured: false
     }
+    {
+      id: 9,
+      title: "Task Management Platform",
+      description: "Modern task management platform with real-time collaboration, drag-and-drop functionality, and team productivity analytics built with React and TypeScript.",
+      image: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800",
+      tags: ["React", "TypeScript", "WebSocket", "Drag & Drop"],
+      link: "#",
+      featured: false
+    }
   ];
 
   return (
