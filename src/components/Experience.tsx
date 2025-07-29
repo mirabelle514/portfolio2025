@@ -110,3 +110,16 @@ const Experience = () => {
                             <span className="text-gray-700 leading-relaxed">{achievement}</span>
                           </li>
                         ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Experience;
