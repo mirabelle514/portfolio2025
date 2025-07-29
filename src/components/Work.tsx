@@ -43,7 +43,7 @@ const Projects = () => {
       featured: false
     },
     {
-      id: 7,
+      id: 5,
       title: "Home Design Assistant App",
       description: "Intelligent home design assistant app leveraging AI recommendation algorithms for personalized DIY project suggestions based on style and budget.",
       icon: Home,
@@ -52,7 +52,7 @@ const Projects = () => {
       featured: false
     },
     {
-      id: 5,
+      id: 6,
       title: "Tour Manager Mobile Application",
       description: "Comprehensive tour management mobile application supporting both iOS and Android platforms with complex business features and 50+ reusable components.",
       icon: Smartphone,
@@ -61,7 +61,7 @@ const Projects = () => {
       featured: false
     },
     {
-      id: 6,
+      id: 7,
       title: "The Wednesday Collective Website",
       description: "Professional React-based website for digital agency using modern JavaScript and component-based architecture with custom Lumière Design System.",
       icon: Globe,
