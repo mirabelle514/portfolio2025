@@ -34,6 +34,15 @@ const Projects = () => {
       featured: true
     },
     {
+      id: 7,
+      title: "Home Design Assistant App",
+      description: "Intelligent home design assistant app leveraging AI recommendation algorithms for personalized DIY project suggestions based on style and budget.",
+      image: "https://images.pexels.com/photos/6585759/pexels-photo-6585759.jpeg?auto=compress&cs=tinysrgb&w=800",
+      tags: ["AI APIs", "React", "Mobile Development", "Data Modeling"],
+      link: "#",
+      featured: false
+    },
+    {
       id: 4,
       title: "Tour Manager Mobile Application",
       description: "Comprehensive tour management mobile application supporting both iOS and Android platforms with complex business features and 50+ reusable components.",
@@ -66,15 +75,6 @@ const Projects = () => {
       description: "Modern React dashboard for e-commerce analytics with real-time data visualization, inventory management, and sales tracking features.",
       image: "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800",
       tags: ["React", "TypeScript", "Chart.js", "REST APIs"],
-      link: "#",
-      featured: false
-    },
-    {
-      id: 7,
-      title: "Home Design Assistant App",
-      description: "Intelligent home design assistant app leveraging AI recommendation algorithms for personalized DIY project suggestions based on style and budget.",
-      image: "https://images.pexels.com/photos/6585759/pexels-photo-6585759.jpeg?auto=compress&cs=tinysrgb&w=800",
-      tags: ["AI APIs", "React", "Mobile Development", "Data Modeling"],
       link: "#",
       featured: false
     }
