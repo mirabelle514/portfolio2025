@@ -15,6 +15,16 @@ const Projects = () => {
     },
     {
       id: 2,
+      title: "AI Content Analyzer",
+      description: "Advanced AI-powered content analysis with real-time insights, confidence scoring, and progressive disclosure patterns.",
+      image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800",
+      tags: ["React", "Vite", "TypeScript", "AI Analysis"],
+      link: "https://ai-interface-studio.com/",
+      impact: "Real-time AI insights with confidence scoring",
+      featured: true
+    },
+    {
+      id: 3,
       title: "AI-Powered Onboarding System",
       description: "AI-powered onboarding system featuring intelligent chat support, personalized user profiling, and comprehensive cheat sheet generation for development teams.",
       image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800",
@@ -24,7 +34,7 @@ const Projects = () => {
       featured: true
     },
     {
-      id: 3,
+      id: 4,
       title: "Tour Manager Mobile Application",
       description: "Comprehensive tour management mobile application supporting both iOS and Android platforms with complex business features and 50+ reusable components.",
       image: "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800",
@@ -33,7 +43,7 @@ const Projects = () => {
       featured: false
     },
     {
-      id: 4,
+      id: 5,
       title: "The Wednesday Collective Website",
       description: "Professional React-based website for digital agency using modern JavaScript and component-based architecture with custom Lumière Design System.",
       image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800",
@@ -42,7 +52,7 @@ const Projects = () => {
       featured: false
     },
     {
-      id: 5,
+      id: 6,
       title: "U.S. Presidents Interactive Website",
       description: "Comprehensive React.js single-page application featuring 46 U.S. presidential biographies with imagined correspondence and custom CSS3 styling.",
       image: "https://images.pexels.com/photos/8112198/pexels-photo-8112198.jpeg?auto=compress&cs=tinysrgb&w=800",
@@ -51,7 +61,16 @@ const Projects = () => {
       featured: false
     },
     {
-      id: 6,
+      id: 8,
+      title: "E-commerce Dashboard",
+      description: "Modern React dashboard for e-commerce analytics with real-time data visualization, inventory management, and sales tracking features.",
+      image: "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800",
+      tags: ["React", "TypeScript", "Chart.js", "REST APIs"],
+      link: "#",
+      featured: false
+    },
+    {
+      id: 7,
       title: "Home Design Assistant App",
       description: "Intelligent home design assistant app leveraging AI recommendation algorithms for personalized DIY project suggestions based on style and budget.",
       image: "https://images.pexels.com/photos/6585759/pexels-photo-6585759.jpeg?auto=compress&cs=tinysrgb&w=800",
