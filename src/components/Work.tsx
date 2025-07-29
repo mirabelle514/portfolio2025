@@ -71,11 +71,11 @@ const Projects = () => {
     },
     {
       id: 8,
-      title: "E-commerce Dashboard",
-      description: "Modern React dashboard for e-commerce analytics with real-time data visualization, inventory management, and sales tracking features.",
-      image: "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800",
-      tags: ["React", "TypeScript", "Chart.js", "REST APIs"],
-      link: "#",
+      title: "AI Chatbot for Insurance Customer Service",
+      description: "Modern, accessible AI chatbot interface showcasing UX best practices for insurance customer service. Features Liberty Mutual's design system, WCAG compliance, smart suggestions, and realistic conversation flow with typing indicators.",
+      image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800",
+      tags: ["React", "TypeScript", "AI Integration", "Design Systems", "Accessibility"],
+      link: "https://github.com/mirabelle514/AIChatbot",
       featured: false
     },
     {
