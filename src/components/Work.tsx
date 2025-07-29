@@ -77,7 +77,7 @@ const Projects = () => {
       tags: ["React", "TypeScript", "Chart.js", "REST APIs"],
       link: "#",
       featured: false
-    }
+    },
     {
       id: 9,
       title: "Task Management Platform",
