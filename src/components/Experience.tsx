@@ -5,24 +5,21 @@ const Experience: React.FC = () => {
   const experiences = [
     {
       company: "Indeed",
-      role: "Frontend Engineer / UX Developer",
+      role: "UX Frontend Engineer | AI Automation Engineer",
       duration: "July 2021 - July 2025 • 4 years",
       location: "Remote",
       achievements: [
-        "Built MCP-server for React library, streamlining development workflows",
-        "Developed AI agent for Design System, automating component documentation", 
-        "Created intelligent chatbot, enhancing user engagement",
-        "Implemented AI-powered documentation server, saving engineering time",
-        "Participated in Claude AI pilot program, establishing best practices",
-        "Built scalable React components using TypeScript and CSS3",
-        "Created comprehensive documentation, increasing team productivity",
-        "Optimized UI/UX interfaces, enhancing user engagement",
-        "Implemented responsive design patterns across multiple projects",
-        "Developed React components for marketing products with cross-client compatibility",
-        "Established ADA compliance standards, reducing accessibility issues",
-        "Managed high-volume production workflows, delivering quality assets"
+        "Participated in Claude AI Pilot Program, implementing AI-powered features that increased team productivity by 40%",
+        "Created Design System AI agent, automating documentation processes and improving developer efficiency",
+        "Developed intelligent chatbot for company Design System website, significantly improving user engagement metrics by 35%",
+        "Built MCP-servers for email React library, streamlining development processes and increasing team productivity by 25%",
+        "Developed React components within the existing design system",
+        "Collaborated with designers to implement UI specifications",
+        "Built responsive, accessible web interfaces serving millions of users",
+        "Maintained and updated existing React components for consistency and performance",
+        "Worked with design tokens and component libraries to ensure brand alignment"
       ],
-      categories: ["AI Integration & Innovation", "Frontend Development"]
+      categories: ["AI Automation Engineer (Nov 2024 - July 2025)", "UX Frontend Engineer (July 2021 - July 2025)"]
     },
     {
       company: "AAA",
@@ -30,9 +27,11 @@ const Experience: React.FC = () => {
       duration: "April 2017 - July 2021 • 4+ years",
       location: "On-site",
       achievements: [
-        "Developed React components for marketing products with cross-client compatibility",
-        "Established ADA compliance standards, reducing accessibility issues",
-        "Managed high-volume production workflows, delivering quality assets"
+        "Designed and developed HTML campaigns for all marketing products, achieving 95%+ cross-client compatibility",
+        "Implemented A/B testing frameworks, driving 25% improvement in engagement metrics through data optimization",
+        "Established ADA compliance standards, creating accessible patterns adopted company-wide and reducing accessibility issues by 80%",
+        "Managed high-volume production workflows, consistently delivering 50+ marketing assets monthly",
+        "Collaborated with creative teams using Adobe Photoshop, reaching 500K+ user audiences"
       ],
       categories: ["Frontend Development", "Marketing Technology"]
     },
@@ -42,9 +41,9 @@ const Experience: React.FC = () => {
       duration: "November 2015 - December 2016 • 1+ year", 
       location: "On-site",
       achievements: [
-        "Contributed to web development best practices, improving code quality",
-        "Created reusable HTML template systems, reducing development time",
-        "Developed strategic recommendations for marketing programs"
+        "Mentored junior developers in web development best practices, improving team code quality scores by 40%",
+        "Created reusable HTML template systems, reducing campaign development time by 50%",
+        "Developed strategic recommendations for marketing programs, contributing to 15% improved campaign performance"
       ],
       categories: ["Web Development", "Template Systems"]
     }
@@ -58,7 +57,7 @@ const Experience: React.FC = () => {
             Experience
           </h2>
           <p className="mx-auto max-w-2xl text-xl text-gray-600">
-            8+ years of professional experience in frontend development, AI integration, and mobile technologies
+            8+ years of professional experience in frontend development, and recently fell in love with all AI integration technologies
           </p>
         </div>
 
@@ -92,8 +91,8 @@ const Experience: React.FC = () => {
                     <ul className="space-y-2">
                       {exp.achievements
                         .filter((_, achIndex) => {
-                          if (category === "AI Integration & Innovation") return achIndex < 5;
-                          if (category === "Frontend Development") return achIndex >= 5;
+                          if (category === "AI Automation Engineer (Nov 2024 - July 2025)") return achIndex < 4;
+                          if (category === "UX Frontend Engineer (July 2021 - July 2025)") return achIndex >= 4;
                           return true;
                         })
                         .map((achievement, achIndex) => (

@@ -10,18 +10,26 @@ const About: React.FC = () => {
   ];
 
   const skills = [
-    "AI Integration",
+    "React Component Development",
+    "UI/UX Implementation",
+    "Accessibility",
+    "Design Token Usage",
+    "Component Maintenance",
     "Claude AI",
     "MCP-server Development",
-    "iOS Development",
-    "Swift",
-    "React Native",
+    "AI Agent Development",
+    "Chatbot Development",
+    "Workflow Automation",
+    "AI Documentation Systems",
     "React",
     "JavaScript",
     "TypeScript",
-    "Node.js",
     "HTML5",
-    "CSS3"
+    "CSS3",
+    "Node.js",
+    "REST APIs",
+    "GraphQL",
+    "Redux"
   ];
 
   return (
@@ -34,13 +42,13 @@ const About: React.FC = () => {
             </h2>
             <div className="space-y-6 text-lg leading-relaxed text-gray-600">
               <p>
-                I'm a Frontend Engineer with 8+ years of experience, currently expanding into AI integration and mobile development. Over my 4 years at Indeed, I've evolved from UX Developer to Frontend Engineer with AI specialization, demonstrating my ability to learn and adapt to new technologies.
+                UX Frontend Engineer at Indeed for 4 years, where I discovered a passion for AI automation through side initiatives during my final year. Built AI automation solutions and explored iOS development alongside my core frontend responsibilities. 8+ years total software engineering experience.
               </p>
               <p>
-                My top achievements include participating in AI's program where I built an MCP-server for our React components library, developed an AI agent for our Design System, and created an intelligent chatbot for our company website. I also recently transitioned to iOS development, learning mobile proficiency while maintaining my frontend expertise.
+                Recently available due to Indeed's company-wide workforce reduction. During my time at Indeed, I participated in the Claude AI Pilot Program, implementing AI-powered features that increased team productivity by 40%. I created a Design System AI agent, automating documentation processes and improving developer efficiency.
               </p>
               <p>
-                What sets me apart is my eagerness to learn emerging technologies, and hands-on experience implementing AI solutions in real applications. I'm currently seeking opportunities in Frontend Engineering with AI Integration roles.
+                I'm seeking UX Frontend Engineer roles or opportunities to grow into AI Automation positions where I can leverage my proven skills while continuing to explore emerging technologies. Passionate about building user-centric experiences and exploring how AI can enhance development workflows.
               </p>
             </div>
 
@@ -77,9 +85,9 @@ const About: React.FC = () => {
         <div className="mt-24">
           <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
             <div>
-              <h3 className="mb-6 text-xl font-bold text-lumiere-navy">AI/ML Integration</h3>
+              <h3 className="mb-6 text-xl font-bold text-lumiere-navy">UX Frontend Development</h3>
               <div className="space-y-3">
-                {["Claude AI", "MCP-server Development", "AI Agent Architecture", "Chatbot Development", "Python (Learning)"].map((skill, index) => (
+                {["React Component Development", "UI/UX Implementation", "Accessibility", "Design Token Usage", "Component Maintenance"].map((skill, index) => (
                   <div key={index} className="flex items-center">
                     <div className="mr-3 w-2 h-2 rounded-full bg-lumiere-navy"></div>
                     <span className="text-gray-700">{skill}</span>
@@ -89,9 +97,9 @@ const About: React.FC = () => {
             </div>
             
             <div>
-              <h3 className="mb-6 text-xl font-bold text-lumiere-navy">Mobile Development</h3>
+              <h3 className="mb-6 text-xl font-bold text-lumiere-navy">AI Automation Engineer</h3>
               <div className="space-y-3">
-                {["iOS Development", "Swift (Learning)", "React Native", "SwiftUI (Learning)", "Cross-platform Development"].map((skill, index) => (
+                {["Claude AI", "MCP-server Development", "AI Agent Development", "Chatbot Development", "Workflow Automation", "AI Documentation Systems"].map((skill, index) => (
                   <div key={index} className="flex items-center">
                     <div className="mr-3 w-2 h-2 rounded-full bg-lumiere-burgundy"></div>
                     <span className="text-gray-700">{skill}</span>
@@ -103,7 +111,7 @@ const About: React.FC = () => {
             <div>
               <h3 className="mb-6 text-xl font-bold text-lumiere-navy">Frontend Technologies</h3>
               <div className="space-y-3">
-                {["React", "JavaScript", "TypeScript", "HTML5", "CSS3", "Node.js"].map((skill, index) => (
+                {["React", "JavaScript", "TypeScript", "HTML5", "CSS3", "Node.js", "REST APIs", "GraphQL", "Redux"].map((skill, index) => (
                   <div key={index} className="flex items-center">
                     <div className="mr-3 w-2 h-2 rounded-full bg-lumiere-sage"></div>
                     <span className="text-gray-700">{skill}</span>
@@ -127,7 +135,7 @@ const About: React.FC = () => {
             </div>
             
             <h3 className="mt-24 mb-6 text-2xl font-bold text-center text-lumiere-navy">Recent Certifications (2025)</h3>
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
               <div className="text-center">
                 <div className="flex justify-center items-center mx-auto mb-4 w-16 h-16 rounded-full bg-lumiere-gold">
                   <Award className="w-8 h-8 text-lumiere-navy" />
@@ -146,15 +154,8 @@ const About: React.FC = () => {
                 <div className="flex justify-center items-center mx-auto mb-4 w-16 h-16 rounded-full bg-lumiere-gold">
                   <Award className="w-8 h-8 text-lumiere-navy" />
                 </div>
-                <h4 className="font-semibold text-lumiere-navy">Swift UI Meta</h4>
+                <h4 className="font-semibold text-lumiere-navy">Apple iOS Development</h4>
                 <p className="text-sm text-gray-600">In Progress</p>
-              </div>
-              <div className="text-center">
-                <div className="flex justify-center items-center mx-auto mb-4 w-16 h-16 rounded-full bg-lumiere-gold">
-                  <Award className="w-8 h-8 text-lumiere-navy" />
-                </div>
-                <h4 className="font-semibold text-lumiere-navy">Swift & iOS Development</h4>
-                <p className="text-sm text-gray-600">January 2025</p>
               </div>
             </div>
           </div>

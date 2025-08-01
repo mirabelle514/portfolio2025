@@ -9,17 +9,17 @@ const Hero: React.FC = () => {
           <div className="space-y-md">
             <div className="space-y-sm">
               <p className="text-lg font-medium tracking-wide uppercase text-lumiere-burgundy md:text-xl font-opensans">
-                Frontend Engineer  
+                UX Frontend Engineer 
               </p>
               <h1 className="text-5xl font-bold tracking-tight leading-tight text-lumiere-navy md:text-7xl">
-              AI Integration
+              AI Automation
                 <span className="block text-lumiere-burgundy">
-                Developer
+                Engineer
                 </span>
               </h1>
             </div>
             <p className="mx-auto max-w-3xl text-xl leading-relaxed text-lumiere-navy md:text-2xl font-opensans">
-            8+ years of frontend development experience with experience building production AI-powered solutions. Passionate about creating intelligent, user-centric interfaces that leverage cutting-edge AI technologies to solve real-world problems.
+              UX Frontend Engineer at Indeed for 4 years, where I discovered a passion for AI automation through side initiatives during my final year. Built AI automation solutions and explored iOS development alongside my core frontend responsibilities. 8+ years total Frontend engineering experience.
             </p>
           </div>
           
