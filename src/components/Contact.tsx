@@ -13,7 +13,7 @@ const Contact: React.FC = () => {
     {
       icon: MapPin,
       label: "Location",
-      value: "Available for Remote Work Only",
+      value: "Available for Remote Work",
       href: "#"
     },
     {
@@ -37,7 +37,7 @@ const Contact: React.FC = () => {
           <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">
             Contact Me
           </h2>
-          <p className="mx-auto max-w-2xl text-xl text-gray-600">
+          <p className="mx-auto max-w-2xl text-xl text-left text-gray-600">
             I'm actively seeking opportunities as a Frontend Engineer with a focus on AI-powered web applications.
           </p>
         </div>

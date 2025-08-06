@@ -56,7 +56,7 @@ const Experience: React.FC = () => {
           <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">
             Experience
           </h2>
-          <p className="mx-auto max-w-2xl text-xl text-gray-600">
+          <p className="mx-auto max-w-2xl text-xl text-left text-gray-600">
             8+ years of professional experience in frontend development, and recently fell in love with all AI integration technologies
           </p>
         </div>

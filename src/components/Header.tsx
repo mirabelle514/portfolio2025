@@ -13,6 +13,18 @@ const Header: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Close menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (isMenuOpen && !(event.target as Element).closest('header')) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [isMenuOpen]);
+
   const navItems = [
     { name: 'Projects', href: '#projects' },
     { name: 'About', href: '#about' },
@@ -22,24 +34,26 @@ const Header: React.FC = () => {
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white/80 backdrop-blur-xl border-b border-gray-200/20' : 'bg-transparent'
+      isScrolled || isMenuOpen 
+        ? 'border-b backdrop-blur-xl bg-white/95 border-gray-200/20 shadow-sm' 
+        : 'bg-transparent'
     }`}>
-      <nav className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+      <nav className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <a href="#" className="text-xl font-semibold text-gray-900 tracking-tight">
+            <a href="#" className="text-lg font-semibold tracking-tight text-gray-900 sm:text-xl">
               Mirabelle Doiron
             </a>
           </div>
           
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
+            <div className="flex items-baseline ml-10 space-x-8">
               {navItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors duration-200"
+                  className="px-3 py-2 text-sm font-medium text-gray-700 transition-colors duration-200 hover:text-gray-900"
                 >
                   {item.name}
                 </a>
@@ -51,7 +65,9 @@ const Header: React.FC = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-700 hover:text-gray-900 p-2"
+              className="p-2 text-gray-700 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-lumiere-navy rounded-md"
+              aria-label="Toggle menu"
+              aria-expanded={isMenuOpen}
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -60,13 +76,13 @@ const Header: React.FC = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-white/95 backdrop-blur-xl rounded-lg mt-2 border border-gray-200/20">
+          <div className="md:hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-xl border-b border-gray-200/20 shadow-lg">
+            <div className="px-4 py-2 space-y-1">
               {navItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-700 hover:text-gray-900 block px-3 py-2 text-base font-medium transition-colors duration-200"
+                  className="block px-3 py-3 text-base font-medium text-gray-700 transition-colors duration-200 hover:text-gray-900 hover:bg-gray-50 rounded-md touch-manipulation"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
