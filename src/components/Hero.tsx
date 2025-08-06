@@ -3,7 +3,7 @@ import React from 'react';
 const Hero: React.FC = () => {
   return (
     <section className="flex overflow-hidden relative justify-center items-center min-h-[75vh] bg-white pt-24 sm:pt-28 md:pt-20 lg:pt-16">
-      <div className="relative z-10 px-4 mx-auto max-w-4xl text-center sm:px-6 lg:px-8">
+      <div className="relative z-10 px-4 mx-auto max-w-4xl text-center sm:px-6 lg:px-8 min-h-[50vh]">
         <div className="space-y-8 sm:space-y-12 lg:space-y-16">
           <div className="space-y-4 sm:space-y-6 lg:space-y-8">
             <div className="space-y-2 sm:space-y-3 lg:space-y-4">

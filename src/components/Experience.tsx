@@ -50,7 +50,7 @@ const Experience: React.FC = () => {
   ];
 
   return (
-    <section id="experience" className="py-24 bg-gray-50">
+    <section id="experience" className="py-12 bg-gray-50">
       <div className="px-6 mx-auto max-w-7xl lg:px-8">
         <div className="mb-16 text-center">
           <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">

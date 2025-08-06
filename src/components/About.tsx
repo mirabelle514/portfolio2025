@@ -82,7 +82,7 @@ const About: React.FC = () => {
           </div>
         </div>
 
-        <div className="mt-24">
+        <div className="p-12 mt-24 rounded-2xl bg-lumiere-ivory">
           <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
             <div>
               <h3 className="mb-6 text-xl font-bold text-lumiere-navy">UX Frontend Development</h3>
@@ -121,7 +121,7 @@ const About: React.FC = () => {
             </div>
           </div>
           
-          <div className="p-8 mt-16 bg-gray-50 rounded-2xl">
+          <div className="p-12 mt-24 rounded-2xl bg-lumiere-ivory">
             <h3 className="mb-6 text-2xl font-bold text-center text-lumiere-navy">Technical Skills</h3>
             <div className="flex flex-wrap gap-3 justify-center mb-12">
               {skills.map((skill, index) => (
